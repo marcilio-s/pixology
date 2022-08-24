@@ -345,7 +345,7 @@ transform: scaleX(1);
   margin-block: 30px 35px;
 }
 
-.hero-content:is(.wrapper, .hero-btn) {
+.hero-content :is(.wrapper, .hero-btn) {
   display: flex;
   align-items: center;
 }
