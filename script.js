@@ -6,7 +6,7 @@ const addEventOnElem = function (elem, type, callback) {
             elem[i].addEventListener(type, callback);
         }
     } else {
-        elem.addEventListerner(type, callback);
+        elem.addEventListener(type, callback);
     }   
 }
 
@@ -28,10 +28,10 @@ const closeNavbar = function () {
 }
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
-const header =document.querySelector("[data-header]");
+const header = document.querySelector("[data-header]");
 
 const headerActive = function () {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
         header.classList.add('active');
     } else{
         header. classList.remove ('active')
